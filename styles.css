@@ -189,9 +189,14 @@ hr {
 }
 
 @media (min-width:376px) {
+
+    header {
+        margin-bottom: 50px;
+    }
+
     .container {
         max-width: 1440px;
-        padding: 80px 150px;
+        padding: 100px 180px;
     }
 
     .menu-toggle {
@@ -227,22 +232,42 @@ hr {
         grid-area: 1 / 1 / 3 / 3;
         display: flex;
         flex-direction: column;
+        height: 400px;
+    }
+
+    .image-container {
+        width: 700px;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .hero-image {
+        object-fit: cover;
+        object-position: bottom;
+        width: 100%;
     }
 
     .hero-content {
         display: flex;
+        padding: 20px 10px;
     }
 
     .hero-content h1 {
-        font-size: 44px;
+        font-size: 48px;
+        margin-right: 50px;
     }
 
     .news {
         grid-area: 1 / 3 / 3 / 4;
+        height: 400px;
     }
 
     .top-stories {
         grid-area: 3 / 1 / 4 / 4;
         flex-direction: row;
+    }
+
+    .story {
+        height: 100px;
     }
 }
